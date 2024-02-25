@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+  background-image: url("assets/Images/Hero_Image.jpg");
+  background-position: center center;
+  background-size: max(2200px, 100vw);
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+header .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.66;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 76vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 82px;
+}
+
+nav img {
+  color: #E50914;
+  width: 135px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.text {
+  height: calc(100% - 82px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  padding: 0 30px;
+}
+
+.text> div .one {
+  font-size: 42px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.text :nth-child(2) {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.text :nth-child(3) {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.line {
+    height: 8px;
+    width: auto;
+    background-color: rgb(39, 39, 39);
+}
+
+.btn {
+    padding: 3px 8px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+}
+
+.btn-red-sn {
+    padding: 7px 14px;
+    background-color: #E50914;
+    color: white;
+}
+
+.text input {
+    width: 300px;
+    padding: 16px 0px 11px 10px;
+    margin-right: 2px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.text input:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+
+/* Sections First */
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 72vw;
+  margin: auto;
+  color: white;
+  padding: 35px 0;
+}
+
+.first-image {
+  position: relative;
+}
+
+.first-image img{
+  width: 490px;
+  position: relative;
+  z-index: 10;
+}
+
+.first-image video {
+  position: absolute;
+  width: 357px;
+  top: 75px;
+  right: 0;
+  margin-right: 67px;
+}
+
+.first> div {
+  display: flex;
+  flex-direction: column;
+}
+
+.first> div :first-child {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.first p {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+
+/* Section Two */
+.box-icon {
+  border: 2px solid white;
+  height: 102px;
+  width: 316px;
+  display: flex;
+  align-items: center;
+}
+
+.box-icon img {
+  height: 80px;
+  width: 57px;
+}
+
+
+/* Section Third */
+.third video {
+  position: absolute;
+  width: 310px;
+  top: 41px;
+  right: 0;
+  margin-right: 88px;
+}
+
+
+/* FAQ */
+.faq {
+  color: white;
+  text-align: center;
+  padding: 55px;
+  padding-bottom: 30px;
+}
+
+.faq h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.box-faq {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2D2D2D;
+  padding: 24px;
+  font-size: 24px;
+  max-width: 73vw;
+  margin: 9px auto;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.box-faq:hover {
+  background-color: #414141;
+}
+
+.faq .text {
+  margin-top: 46px;
+}
+
+.text> div.text-one {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+
+/* Footer */
+footer {
+  color: #ffffffb3;
+  max-width: 76vw;
+  margin: 72px auto;
+  padding: 0px 35px;
+}
+
+footer .contact {
+  padding-bottom: 25px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-item a {
+  color: #ffffffb3;
+  font-size: 14px;
+}
+
+select {
+  background: transparent;
+  color: white;
+  padding: 6px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.318);
+  border-radius: 4px;
+}
+
+select.lang {
+  margin-top: 24px;
+}
+
+select.lang-header {
+  position: relative;
+  z-index: 10;
+  margin-right: 15px;
+}
+
+option {
+  color: black;
+}
+
+.brand-name {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1130px){
+  header {
+    height: 89vh;
+  }
+  
+  header .box {
+    height: 89vh;
+  }
+
+  nav {
+    max-width: 85vw;
+  }
+  
+  nav img {
+    width: 89px;
+  }
+
+  .text> div.text-one {
+    font-size: 16px;
+  }
+
+  .text> div.text-one {
+    font-size: 16px;
+  }
+
+  .text> div .one {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .text :nth-child(2) {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .text :nth-child(3) {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }  
+
+  .first div {
+    text-align: center;
+  } 
+
+  .first> div :first-child {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .first p {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .faq h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .box-faq {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .first-image img{
+    width: 390px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .first-image video {
+    position: absolute;
+    width: 287px;
+    top: 59px;
+    right: 0;
+    margin-right: 52px;
+  }
+
+  .third video {
+    position: absolute;
+    width: 249px;
+    top: 32px;
+    right: 0;
+    margin-right: 78px;
+  }
+
+  select.lang-header {
+    padding: 6px 2px;
+  } 
+}
+
+@media screen and (max-width: 677px){
+  .text .subs input {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    gap: 15px;
+  } 
+}
+
+@media screen and (max-width: 768px){
+  header {
+    height: 75vh;
+  }
+  
+  header .box {
+    height: 75vh;
+  }
+}
